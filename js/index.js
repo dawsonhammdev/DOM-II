@@ -72,3 +72,34 @@ const yolo4 = document.querySelector("#homeLink")
 yolo4.addEventListener("mouseout", () => {
   yolo4.style.color= "purple";
 })
+
+//9
+
+const yolo5 = document.querySelector("#homeLink2")
+yolo5.addEventListener("keydown", () => {
+  yolo5.style.color= "purple";
+})
+
+//10
+
+const yolo6 = document.querySelector("#homeLink3")
+yolo6.addEventListener("keyup", () => {
+  yolo6.style.color= "purple";
+  "keyup".stopPropagation()
+})
+
+//preventDefualt
+
+const stopLink = document.querySelector("nav");
+
+stopLink.addEventListener("mouseout", (yolo4) => {
+  console.log("stopped link");
+
+  yolo4.preventDefault();
+})
+
+
+
+
+
+
